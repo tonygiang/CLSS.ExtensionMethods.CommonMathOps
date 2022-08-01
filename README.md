@@ -38,7 +38,7 @@ This package supports the following operations:
 The below table outlines how to write some of the less obvious operations in this syntax:
 
 | Operation Name | Raw Expression | Functional Syntax |
-|-----------------------------------------------------|
+| ---            | ---            | ---               |
 | Inversion      | `1 / x`        | `x.Pow(-1)`       |
 | Square Root    | `Math.Sqrt(x)` | `x.Pow(0.5)`      |
 | Nth Root       | N/A            | `x.Pow(1.0 / n)`  |
