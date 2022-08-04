@@ -6,31 +6,16 @@ namespace CLSS
 {
   public static partial class CommonMathOps
   {
-    /// <summary>
-    /// Calculates the integral part of the source number.
-    /// </summary>
-    /// <param name="source">A number to truncate.</param>
-    /// <returns>The same result returned by
-    /// Math.Truncate(<paramref name="source"/>).</returns>
-    public static double Truncate(this double source)
-    { return Math.Truncate(source); }
+    /// <inheritdoc cref="Math.Truncate(double)"/>
+    public static double Truncate(this double d)
+    { return Math.Truncate(d); }
 
-    /// <summary>
-    /// Calculates the integral part of the source number.
-    /// </summary>
-    /// <param name="source">A number to truncate.</param>
-    /// <returns>The same result returned by
-    /// Math.Truncate(<paramref name="source"/>).</returns>
-    public static double Truncate(this float source)
-    { return Math.Truncate(source); }
+    /// <inheritdoc cref="Truncate(double)"/>
+    public static double Truncate(this float d)
+    { return Math.Truncate(d); }
 
-    /// <summary>
-    /// Calculates the integral part of the source number.
-    /// </summary>
-    /// <param name="source">A number to truncate.</param>
-    /// <returns>The same result returned by
-    /// Math.Truncate(<paramref name="source"/>).</returns>
-    public static decimal Truncate(this decimal source)
-    { return Math.Truncate(source); }
+    /// <inheritdoc cref="Truncate(decimal)"/>
+    public static decimal Truncate(this decimal d)
+    { return Math.Truncate(d); }
   }
 }

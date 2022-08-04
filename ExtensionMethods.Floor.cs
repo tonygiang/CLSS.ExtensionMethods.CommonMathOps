@@ -6,34 +6,16 @@ namespace CLSS
 {
   public static partial class CommonMathOps
   {
-    /// <summary>
-    /// Returns the largest integral value less than or equal to the source
-    /// number.
-    /// </summary>
-    /// <param name="source">A number to floor.</param>
-    /// <returns>The same result returned by
-    /// Math.Floor(<paramref name="source"/>).</returns>
-    public static double Floor(this double source)
-    { return Math.Floor(source); }
+    /// <inheritdoc cref="Math.Ceiling(double)"/>
+    public static double Floor(this double d)
+    { return Math.Floor(d); }
 
-    /// <summary>
-    /// Returns the largest integral value less than or equal to the source
-    /// number.
-    /// </summary>
-    /// <param name="source">A number to floor.</param>
-    /// <returns>The same result returned by
-    /// Math.Floor(<paramref name="source"/>).</returns>
-    public static double Floor(this float source)
-    { return Math.Floor(source); }
+    /// <inheritdoc cref="Math.Ceiling(double)"/>
+    public static double Floor(this float d)
+    { return Math.Floor(d); }
 
-    /// <summary>
-    /// Returns the largest integral value less than or equal to the source
-    /// number.
-    /// </summary>
-    /// <param name="source">A number to floor.</param>
-    /// <returns>The same result returned by
-    /// Math.Floor(<paramref name="source"/>).</returns>
-    public static decimal Floor(this decimal source)
-    { return Math.Floor(source); }
+    /// <inheritdoc cref="Math.Ceiling(decimal)"/>
+    public static decimal Floor(this decimal d)
+    { return Math.Floor(d); }
   }
 }
