@@ -4,7 +4,7 @@
 
 How do you read the logic flow of this expression?
 
-```
+```csharp
 Math.Pow(Math.Floor((1 / ((5.4 + 8) * 12.8)) - 16) + 3, 4);
 ```
 
@@ -14,7 +14,7 @@ When order of execution doesn't always flow from left to right, it's often hard 
 
 This package provides common mathematical operations in a functional syntax. The above expression can be rewritten in the following way:
 
-```
+```csharp
 using CLSS;
 
 (5.4).Plus(8).Multiply(12.8).Pow(-1).Subtract(16).Floor().Plus(3).Pow(4);
